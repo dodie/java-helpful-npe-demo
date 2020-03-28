@@ -3,13 +3,13 @@
 This repository contains an example code that uses the DOM API to discover
 an XML document.
 
-A typical usage of this API:
+A typical usage of this API can be seen in [line 83](https://github.com/dodie/java-14-helpful-npe-demo/blob/master/Main.java#L83):
 
 ```java
 department.getElementsByTagName("name").item(0).getChildNodes().item(0).getNodeValue();
 ```
 
-If any method is to return a null in this chain, it will blow up with a `NullPointerException`.
+If any method returns a null in this chain, it will blow up with a `NullPointerException`.
 But can you tell which?
 
 **In the old days of Java all we got is**:
