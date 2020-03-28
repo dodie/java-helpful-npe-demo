@@ -21,7 +21,7 @@ Exception in thread "main" java.lang.NullPointerException
 
 Finding out the exact source of the problem is left as an exercise for the reader.
 
-However, **with Java 14's Helpful NullPointerExceptions the message contains a more
+However, **with Java 14's (Helpful NullPointerExceptions)[https://openjdk.java.net/jeps/358] the message contains a more
 precise reason**:
 
 ```
