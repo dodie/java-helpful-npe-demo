@@ -12,7 +12,7 @@ department.getElementsByTagName("name").item(0).getChildNodes().item(0).getNodeV
 If any method is to return a null in this chain, it will blow up with a `NullPointerException`.
 But can you tell which?
 
-In the old days of Java all we got is:
+**In the old days of Java all we got is**:
 
 ```
 Exception in thread "main" java.lang.NullPointerException
@@ -21,8 +21,8 @@ Exception in thread "main" java.lang.NullPointerException
 
 Finding out the exact source of the problem is left as an exercise for the reader.
 
-However, with Java 14's Helpful NullPointerExceptions the message contains a more
-precise reason:
+However, **with Java 14's Helpful NullPointerExceptions the message contains a more
+precise reason**:
 
 ```
 Exception in thread "main" java.lang.NullPointerException: Cannot invoke "org.w3c.dom.Node.getChildNodes()" because the return value of "org.w3c.dom.NodeList.item(int)" is null
