@@ -1,4 +1,4 @@
-# Java 14 Helpful NullPointerExceptions Demo
+# Java Helpful NullPointerExceptions Demo
 
 This repository contains an example code that uses the DOM API to discover
 an XML document.
@@ -29,12 +29,9 @@ Exception in thread "main" java.lang.NullPointerException: Cannot invoke "org.w3
         at Main.processEmployee(Main.java:83)
 ```
 
-# Requirements
-
-Install Java 14.
-
-
 # Usage
+
+Install Java 14, then run the following.
 
 ```bash
 # Compile
@@ -46,4 +43,6 @@ java -cp . --enable-preview -XX:+ShowCodeDetailsInExceptionMessages Main
 # Run without Helpful NullPointerExceptions
 java -cp . --enable-preview Main
 ```
+
+Note: with **Java 15+** you don't have to pass the `-XX:+ShowCodeDetailsInExceptionMessages` flag.
 
