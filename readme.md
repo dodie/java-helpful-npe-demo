@@ -50,6 +50,6 @@ javac --enable-preview -source 14 Main.java
 # Run with Helpful NullPointerExceptions enabled
 java -cp . --enable-preview -XX:+ShowCodeDetailsInExceptionMessages Main
 
-# Run without Helpful NullPointerExceptions
+# By default Helpful NullPointerExceptions are not enabled
 java -cp . --enable-preview Main
 ```
