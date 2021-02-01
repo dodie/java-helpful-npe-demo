@@ -21,7 +21,7 @@ Exception in thread "main" java.lang.NullPointerException
 
 Finding out the exact source of the problem is left as an exercise for the reader.
 
-However, **with Java 14's [Helpful NullPointerExceptions](https://openjdk.java.net/jeps/358) the message contains a more
+However, **since Java 14 with [Helpful NullPointerExceptions](https://openjdk.java.net/jeps/358) the message contains a more
 precise reason**:
 
 ```
@@ -31,7 +31,17 @@ Exception in thread "main" java.lang.NullPointerException: Cannot invoke "org.w3
 
 # Usage
 
-Install Java 14, then run the following.
+## With Java 15 and above
+
+```bash
+# Compile
+javac -source 15 Main.java
+
+# Helpful NullPointerExceptions are enabled by default
+java -cp . Main
+```
+
+## With Java 14
 
 ```bash
 # Compile
@@ -43,6 +53,3 @@ java -cp . --enable-preview -XX:+ShowCodeDetailsInExceptionMessages Main
 # Run without Helpful NullPointerExceptions
 java -cp . --enable-preview Main
 ```
-
-Note: with **Java 15+** you don't have to pass the `-XX:+ShowCodeDetailsInExceptionMessages` flag.
-
